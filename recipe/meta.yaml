@@ -1,5 +1,5 @@
 {% set name = "edrixs" %}
-{% set version = "0.0.7" %}
+{% set version = "0.0.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fce7c1543d61df156696533dd7abcb7782e410bfb91afe7ae77109735146d160
+  sha256: 121cfb171423087013156390bd2b7187a046091fbeb7985099f48ebd74b6e69e
 
 build:
-  number: 1
+  number: 0
   skip: true  # [not linux]
 
 requirements:
