@@ -10,9 +10,8 @@ source:
   sha256: 121cfb171423087013156390bd2b7187a046091fbeb7985099f48ebd74b6e69e
 
 build:
-  number: 2
+  number: 3
   skip: true  # [not unix]
-
 
 requirements:
   build:
@@ -21,7 +20,7 @@ requirements:
   host:
     - python
     - pip
-    - arpack =*=mpi_openmpi_*
+    - arpack
     - libblas * *openblas
     - numpy
     - openblas
