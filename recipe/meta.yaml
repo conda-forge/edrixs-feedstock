@@ -25,7 +25,7 @@ requirements:
     - numpy
     - openblas
     - openmpi
-    - {{ "arpack" if (osx_arm == "True") else "arpack =*=mpi_openmpi_*" }}
+    - {{ "arpack" if (osx_arm64 == "True") else "arpack =*=mpi_openmpi_*" }}
   run:
     - python
     - libblas * *openblas
