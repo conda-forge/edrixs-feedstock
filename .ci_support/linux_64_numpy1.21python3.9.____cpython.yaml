@@ -9,9 +9,9 @@ docker_image:
 fortran_compiler:
 - gfortran
 fortran_compiler_version:
-- '10'
+- '12'
 numpy:
-- '1.20'
+- '1.21'
 openblas:
 - 0.3.*
 openmpi:
