@@ -1,21 +1,22 @@
 {% set name = "edrixs" %}
-{% set version = "0.0.8" %}
+{% set version = "0.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 121cfb171423087013156390bd2b7187a046091fbeb7985099f48ebd74b6e69e
+  url: https://github.com/NSLS-II/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 659aded9e628e46393858af3052af22343d2c601a7d521b0453217dc2faee683
 
 build:
-  number: 2
+  number: 0
   skip: true  # [not unix]
 
 requirements:
   build:
-    - make
+    - cmake
     - {{ compiler('fortran') }}
   host:
     - python
