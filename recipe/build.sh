@@ -12,8 +12,8 @@
 # # build Fortran extension via f2py
 # $PYTHON setup.py build_ext --library-dirs=$LIBRARY_LIB
 
-# This may fix the issue with not found Python3 executable on OSX (per https://stackoverflow.com/a/68916794):
-export CMAKE_PREFIX_PATH=$(dirname $(dirname $PYTHON))
+# Per https://stackoverflow.com/a/56270825 (for OSX builds primarily):
+export CMAKE_CONFIGURE_ARGS="-DPython_EXECUTABLE=$PYTHON"
 
 # install python parts
 $PYTHON -m pip install . --no-deps --ignore-installed -vvv
