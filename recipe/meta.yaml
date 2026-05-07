@@ -1,5 +1,5 @@
 {% set name = "edrixs" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://github.com/NSLS-II/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: bb24c96cc46c730efcd72113117f5868140cdca1b162964844b56c215a5c9c17
+  url: https://github.com/EDRIXS/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
+  sha256: df4a2ddcde71a710f780a0cc9866db0a9f330dbf593b24e16d8ffe9f928495da
 
 build:
-  number: 3
+  number: 0
   skip: true  # [not linux]
 
 requirements:
