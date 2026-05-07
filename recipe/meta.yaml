@@ -8,7 +8,7 @@ package:
 source:
   # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   url: https://github.com/EDRIXS/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 4e3fcde369e02090edb78be2f8991839548a270085fd6505a69149dcc9cb2adc
+  sha256: df4a2ddcde71a710f780a0cc9866db0a9f330dbf593b24e16d8ffe9f928495da
 
 build:
   number: 0
