@@ -3,7 +3,7 @@ About edrixs-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/edrixs-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/EDRIXS/edrixs
+Home: https://github.com/NSLS-II/edrixs
 
 Package license: BSD-3-Clause
 
@@ -13,7 +13,14 @@ Current build status
 ====================
 
 
-<table>
+<table><tr>
+    <td>GitHub Actions</td>
+    <td>
+      <a href="https://github.com/conda-forge/edrixs-feedstock/actions/workflows/conda-build.yml">
+        <img src="https://github.com/conda-forge/edrixs-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+      </a>
+    </td>
+  </tr>
 </table>
 
 Current release info
@@ -33,31 +40,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `edrixs` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install edrixs
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install edrixs
 ```
 
-It is possible to list all of the versions of `edrixs` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add edrixs
+# for installing globally
+pixi global install edrixs
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `edrixs` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search edrixs --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search edrixs --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search edrixs --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -69,6 +118,8 @@ mamba repoquery whoneeds edrixs --channel conda-forge
 # List dependencies of `edrixs`:
 mamba repoquery depends edrixs --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
@@ -137,10 +188,9 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@lajerm](https://github.com/lajerm/)
 * [@mpmdean](https://github.com/mpmdean/)
 * [@mrakitin](https://github.com/mrakitin/)
+* [@skarakuzu](https://github.com/skarakuzu/)
 * [@thopkins32](https://github.com/thopkins32/)
-
-
-<!-- dummy commit to enable rerendering -->
 
