@@ -1,5 +1,5 @@
 {% set name = "edrixs" %}
-{% set version = "0.1.2" %}
+{% set version = "0.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -8,11 +8,11 @@ package:
 source:
   # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   url: https://github.com/EDRIXS/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: df4a2ddcde71a710f780a0cc9866db0a9f330dbf593b24e16d8ffe9f928495da
+  sha256: b2cadf2479e08fdf60896a84cfb2c70cdb4b3d1fe39a2c93fe2336004b81569d
 
 build:
   number: 0
-  skip: true  # [not linux]
+  skip: true  # [win]
 
 requirements:
   build:
@@ -25,7 +25,7 @@ requirements:
   host:
     - python
     - pip
-    - arpack =*=mpi_openmpi_*
+    - arpack * mpi_openmpi_*
     - libblas * *openblas
     - numpy
     - openblas
@@ -37,7 +37,7 @@ requirements:
     - libopenblas
     - matplotlib-base
     - mpi4py
-    - numpy
+    - numpy >=1.26
     - openblas
     - openmpi
     - scipy
@@ -54,8 +54,8 @@ test:
     - mpiexec -n 2 python example_2_AIM_XAS.py
 
 about:
-  home: https://github.com/NSLS-II/edrixs
-  license: BSD-3-Clause
+  home: https://github.com/EDRIXS/edrixs
+  license: GPL-3.0-or-later
   license_file: LICENSE
   summary: An open source toolkit for simulating RIXS spectra based on ED
 
