@@ -17,4 +17,4 @@ curl --output /tmp/rsh-0.17-102.el9.x86_64.rpm https://dl.fedoraproject.org/pub/
 sudo yum install /tmp/rsh-0.17-102.el9.x86_64.rpm -y
 
 # install python parts
-$PYTHON -m pip install . --no-deps --ignore-installed -vvv
+CONDA_PREFIX="${PREFIX}" "${PYTHON}" -m pip install . --no-deps --ignore-installed -vvv
