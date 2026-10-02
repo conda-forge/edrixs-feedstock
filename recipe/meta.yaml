@@ -9,6 +9,9 @@ source:
   # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   url: https://github.com/EDRIXS/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
   sha256: 84a9c3e061162a61e2aa6552b7077b0c5818eb62a6e6a3871f4c9df1f1a12839
+  patches:
+    # only the Python module is built, so don't require libpython (Development.Embed)
+    - cmake-python-development-module.patch
 
 build:
   number: 1
