@@ -1,0 +1,11 @@
+--- a/CMakeLists.txt	2026-10-02 14:26:10
++++ b/CMakeLists.txt	2026-10-02 14:26:10
+@@ -46,7 +46,7 @@
+ 
+ if (EDRIXS_PY_INTERFACE)
+   message(STATUS "Building python interface")
+-  find_package(Python3 3.7 REQUIRED COMPONENTS Interpreter Development NumPy)
++  find_package(Python3 3.7 REQUIRED COMPONENTS Interpreter Development.Module NumPy)
+ 
+   # Grab the variables from a local Python installation
+   # F2PY headers
