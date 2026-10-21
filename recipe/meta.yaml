@@ -8,10 +8,12 @@ package:
 source:
   # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   url: https://github.com/EDRIXS/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 111e129354c2104d7cf29219cfb1ba576f5bccee04ce0494def0bf22d8c5edd6
+  sha256: 8eaea21ba61927964daf4de52338220c0c1065fe9b8625087f7f15959adb66e2
+  patches:
+    - cmake-python-development-module.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
