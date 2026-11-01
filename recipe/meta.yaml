@@ -1,5 +1,5 @@
 {% set name = "edrixs" %}
-{% set version = "0.2.0" %}
+{% set version = "0.3.0.dev1" %}
 
 package:
   name: {{ name|lower }}
@@ -8,13 +8,13 @@ package:
 source:
   # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   url: https://github.com/EDRIXS/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 8eaea21ba61927964daf4de52338220c0c1065fe9b8625087f7f15959adb66e2
+  sha256: ac1b0dd444a925dab5c4e2ca675a95431535cb349e676d1d8596e131822a5813
   patches:
     - cmake-python-development-module.patch
 
 build:
-  number: 1
-  skip: true  # [win]
+  number: 0
+  skip: true  # [win or py<310]
 
 requirements:
   build:
@@ -29,10 +29,12 @@ requirements:
     - pip
     - arpack * mpi_openmpi_*
     - libblas * *openblas
-    - numpy
+    - numpy >=2
     - openblas
     - openmpi
     - setuptools
+    - wheel
+    - ninja
   run:
     - python
     - libblas * *openblas
@@ -41,6 +43,10 @@ requirements:
     - mpi4py
     - numba
     - numpy >=1.26
+    - petsc * complex_*
+    - slepc * complex_*
+    - petsc4py
+    - slepc4py
     - openblas
     - openmpi
     - scipy
@@ -51,7 +57,10 @@ test:
     - edrixs
   files:
     - example_2_AIM_XAS.py
+    - test_petsc_solver.py
   commands:
+    - python test_petsc_solver.py
+    - mpiexec -n 2 python test_petsc_solver.py
     - python example_2_AIM_XAS.py
     - mpiexec -n 2 python example_2_AIM_XAS.py
 
