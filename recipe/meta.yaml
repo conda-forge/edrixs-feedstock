@@ -29,7 +29,7 @@ requirements:
     - pip
     - arpack * mpi_openmpi_*
     - libblas * *openblas
-    - numpy >=2
+    - numpy
     - openblas
     - openmpi
     - setuptools
