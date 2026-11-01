@@ -1,7 +1,7 @@
 About edrixs-feedstock
 ======================
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/edrixs-feedstock/blob/main/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/edrixs-feedstock/blob/dev/LICENSE.txt)
 
 Home: https://github.com/EDRIXS/edrixs
 
@@ -17,7 +17,7 @@ Current build status
     <td>GitHub Actions</td>
     <td>
       <a href="https://github.com/conda-forge/edrixs-feedstock/actions/workflows/conda-build.yml">
-        <img src="https://github.com/conda-forge/edrixs-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=main">
+        <img src="https://github.com/conda-forge/edrixs-feedstock/actions/workflows/conda-build.yml/badge.svg?event=push&branch=dev">
       </a>
     </td>
   </tr>
@@ -27,8 +27,8 @@ Current build status
     <td>
       <details>
         <summary>
-          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main">
+          <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+            <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev">
           </a>
         </summary>
         <table>
@@ -36,71 +36,71 @@ Current build status
           <tbody><tr>
               <td>osx_64_python3.11.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.11.____cpython" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_64_python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.12.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.12.____cpython" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_64_python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.13.____cp313</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.13.____cp313" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_64_python3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.14.____cp314</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.14.____cp314" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_python3.15.____cp315</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_python3.15.____cp315" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_64_python3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_python3.11.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.11.____cpython" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_arm64_python3.11.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_python3.12.____cpython</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.12.____cpython" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_arm64_python3.12.____cpython" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_python3.13.____cp313</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.13.____cp313" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_arm64_python3.13.____cp313" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_python3.14.____cp314</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.14.____cp314" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_arm64_python3.14.____cp314" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_arm64_python3.15.____cp315</td>
               <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_python3.15.____cp315" alt="variant">
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=17369&branchName=dev">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/edrixs-feedstock?branchName=dev&jobName=osx&configuration=osx%20osx_arm64_python3.15.____cp315" alt="variant">
                 </a>
               </td>
             </tr>
@@ -121,10 +121,10 @@ Current release info
 Installing edrixs
 =================
 
-Installing `edrixs` from the `conda-forge` channel can be achieved by adding `conda-forge` to your channels with:
+Installing `edrixs` from the `conda-forge/label/edrixs_dev` channel can be achieved by adding `conda-forge/label/edrixs_dev` to your channels with:
 
 ```
-conda config --add channels conda-forge
+conda config --add channels conda-forge/label/edrixs_dev
 conda config --set channel_priority strict
 ```
 
@@ -170,7 +170,7 @@ It is possible to list all of the versions of `edrixs` available on your platfor
 <summary>With conda</summary>
 
 ```
-conda search edrixs --channel conda-forge
+conda search edrixs --channel conda-forge/label/edrixs_dev
 ```
 
 </details>
@@ -179,7 +179,7 @@ conda search edrixs --channel conda-forge
 <summary>With mamba</summary>
 
 ```
-mamba search edrixs --channel conda-forge
+mamba search edrixs --channel conda-forge/label/edrixs_dev
 ```
 
 </details>
@@ -188,7 +188,7 @@ mamba search edrixs --channel conda-forge
 <summary>With pixi</summary>
 
 ```
-pixi search edrixs --channel conda-forge
+pixi search edrixs --channel conda-forge/label/edrixs_dev
 ```
 
 </details>
@@ -198,13 +198,13 @@ pixi search edrixs --channel conda-forge
 
 ```
 # Search all versions available on your platform:
-mamba repoquery search edrixs --channel conda-forge
+mamba repoquery search edrixs --channel conda-forge/label/edrixs_dev
 
 # List packages depending on `edrixs`:
-mamba repoquery whoneeds edrixs --channel conda-forge
+mamba repoquery whoneeds edrixs --channel conda-forge/label/edrixs_dev
 
 # List dependencies of `edrixs`:
-mamba repoquery depends edrixs --channel conda-forge
+mamba repoquery depends edrixs --channel conda-forge/label/edrixs_dev
 ```
 
 </details>
