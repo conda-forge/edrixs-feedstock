@@ -1,0 +1,6 @@
+channel_targets:
+  - conda-forge edrixs_dev
+
+# The upstream build requires NumPy >=2.
+numpy:
+  - 2
