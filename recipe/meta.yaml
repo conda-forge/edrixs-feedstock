@@ -15,6 +15,7 @@ source:
 build:
   number: 0
   skip: true  # [win or py<310]
+  script: CONDA_PREFIX="${PREFIX}" "${PYTHON}" -m pip install . --no-deps --no-build-isolation --ignore-installed -vvv
 
 requirements:
   build:
