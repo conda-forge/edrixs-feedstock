@@ -1,5 +1,5 @@
 {% set name = "edrixs" %}
-{% set version = "0.3.0.dev1" %}
+{% set version = "0.3.0.dev2" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 source:
   # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   url: https://github.com/EDRIXS/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: ac1b0dd444a925dab5c4e2ca675a95431535cb349e676d1d8596e131822a5813
+  sha256: 7e6adccc7ddf2aa9a7ff512c244b2c0c0be1b18bc1d95c59b62c9a667e892a74
   patches:
     - cmake-python-development-module.patch
 
